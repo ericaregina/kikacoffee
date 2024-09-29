@@ -12,19 +12,19 @@ const cafes = [
         nome: "Expresso",
         descricao: "Um café forte e encorpado, preparado com grãos selecionados.",
         preco: "R$ 5,00",
-        imagem: "images/cafe1.jpg" 
+        imagem: "https://github.com/ericaregina/kikacoffee/blob/main/cafe1.jpg?raw=true" 
     },
     {
         nome: "Cappuccino",
         descricao: "Café com leite vaporizado e espuma cremosa.",
         preco: "R$ 7,00",
-        imagem: "images/cafe2.jpg" 
+         imagem: "https://github.com/ericaregina/kikacoffee/blob/main/cafe2.jpg?raw=true" 
     },
     {
         nome: "Latte",
         descricao: "Leite vaporizado misturado com café expresso.",
         preco: "R$ 6,50",
-        imagem: "images/cafe3.jpg" 
+       imagem: "https://github.com/ericaregina/kikacoffee/blob/main/cafe3.jpg?raw=true" 
     }
 ];
 
