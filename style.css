@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf3e0;
+    color: #333;
+}
+
+header {
+    background-color: #b5651d;
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 1.6em;
+    color: #b5651d;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+nav ul li a:hover {
+    background-color: #8e4511;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #b5651d;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.cafe-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.cafe-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 800px; 
+}
+
+.cafe-item img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura do item */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 80px; /* Limita a largura máxima da imagem */
+    margin-right: 20px;
+}
+
+.cafe-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.cafe-item p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.cafe-item span {
+    font-weight: bold;
+    color: #b5651d;
+    font-size: 1.1em;
+}
+
+.empresa-texto {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.imagem-rodape {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none; /* Esconde a imagem quando não for necessário */
+}
+
+/* Media queries para ajustar o layout em telas menores */
+@media (max-width: 768px) {
+    .cafe-item {
+        flex-direction: column; /* Empilha o conteúdo em coluna */
+        align-items: flex-start; /* Alinha o texto à esquerda */
+    }
+
+    .cafe-item img {
+        margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+        max-width: 100%; /* Permite que a imagem use a largura total disponível */
+    }
+
+    body {
+        font-size: 14px; 
+    }
+
+    header h1 {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 15px; 
+    }
+
+    nav ul li {
+        margin-bottom: 10px; 
+    }
+
+    nav ul li a {
+        padding: 8px; 
+    }
+}
